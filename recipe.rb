@@ -7,4 +7,5 @@ class Recipe
     @prep_time = prep_time
     @difficulty = difficulty
   end
+
 end

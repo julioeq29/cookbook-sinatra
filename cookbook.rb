@@ -22,15 +22,6 @@ class Cookbook
     save_csv
   end
 
-  def find(recipe_index)
-    @recipes[recipe_index]
-  end
-
-  def update_recipe(recipe, recipe_index)
-    @recipes[recipe_index] = recipe
-    save_csv
-  end
-
   private
 
   def load_csv
