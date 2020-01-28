@@ -1,0 +1,16 @@
+<h1>Welcome to Julio's Cookbook</h1>
+
+<h3>List of Michelin recipes</h3>
+
+<hr>
+
+<% @recipes.each_with_index do |recipe, index| %>
+  <li>
+    <%= "#{recipe.name} - #{recipe.description} - #{recipe.prep_time} - Level: #{recipe.difficulty}" %>
+    <a href="/recipes/<%= index %>">Delete recipe</a>
+  </li>
+<% end %>
+
+<hr>
+
+<a href="\new">Add a new recipe</a>
